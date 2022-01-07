@@ -1,0 +1,32 @@
+{
+  "name": "smartgreenhouseapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --tls-max-v1.3 --tls-cipher-list=TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256 ./app.js"
+  },
+  "dependencies": {
+    "argon2": "^0.28.3",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "debug": "~2.6.9",
+    "dotenv": "^10.0.0",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "fs": "^0.0.1-security",
+    "helmet": "^4.6.0",
+    "http-errors": "~1.6.3",
+    "http2": "^3.3.7",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^6.1.5",
+    "morgan": "~1.9.1",
+    "mqtt": "^4.3.3",
+    "nodemon": "^2.0.15",
+    "spdy": "^4.0.2",
+    "uuid": "^8.3.2",
+    "uuidv4": "^6.2.12"
+  }
+}
