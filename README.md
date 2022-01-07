@@ -16,8 +16,7 @@ Les producteurs peuvent surveiller et contrôler les paramètres mentionnés ci-
 - Déverrouiller la porte de la serre en se basant sur la localisation de mobile et la technologie NFC.
 ## Pour commencer
 
-- Architecture 
-Ce système d'irrigation de serre intelligent est l'un des systèmes basés sur des capteurs qui peuvent fonctionner confortablement 
+- _Architecture_ : Ce système d'irrigation de serre intelligent est l'un des systèmes basés sur des capteurs qui peuvent fonctionner confortablement 
 et amicalement dans l'agriculture en chaque serre. Il contient les différents types de capteurs pour différents potentiels comme :
 capteur de pression atmosphérique, capteur d'humidité du sol et capteur de température du sol.                  
 Notre architecture prend le modèle suivant décrit ci-dessous :
