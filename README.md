@@ -1,8 +1,12 @@
 # Projet_Cloud_of_things_SmartGreenHouse
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
 _Une solution intelligente pour les serres dite "Smart Greenhouse'" permettant d'assurer une productivité optimale._
-
-[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)  [![forthebadge](http://forthebadge.com/images/badges/powered-by-electricity.svg)](http://forthebadge.com)
+#
+![This is an image ](/Frontend/src/assets/icon/crée-par.svg)
+- Chaima Beldi
+- Hassine Chahed 
+##
 
 Notre solution SmartGreenhouse offre un contrôle avancé du microclimat et une optimisation énergétique.
 Les producteurs peuvent surveiller et contrôler les paramètres mentionnés ci-dessous pour assurer un meilleur taux de croissance de la culture :
@@ -18,4 +22,15 @@ et amicalement dans l'agriculture en chaque serre. Il contient les différents t
 capteur de pression atmosphérique, capteur d'humidité du sol et capteur de température du sol.                  
 Notre architecture prend le modèle suivant décrit ci-dessous :
 
-![This is an image ](\Frontend\src\assets\icon\architecture.PNG)
+![This is an image ](/Frontend/src/assets/icon/architecture.PNG)
+
+## Technologies
+We used different frameworks and plugins as our tech stack, they are:
+
+- Angular : v13.0.0
+- Ionic: v6
+- Capacitor
+- Node.js : v16
+- Express: 4.17.1
+- Node-Red
+- Mosquitto Broker
