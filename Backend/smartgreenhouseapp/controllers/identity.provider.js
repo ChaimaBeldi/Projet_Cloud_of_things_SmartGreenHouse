@@ -5,9 +5,8 @@ const jwt = require("jsonwebtoken");
 const validityTime = require("../config.js")().validityTime;
 const crypto = require("crypto");
 function IdentityProvider() {}
-
+//SignUp
 IdentityProvider.prototype.signUp = async (req, res, next) => {
-  // console.log("aaaa");
   try {
     req.body.password = await argon2.hash(req.body.password, {
       type: argon2.argon2id,
@@ -25,12 +24,14 @@ IdentityProvider.prototype.signUp = async (req, res, next) => {
     res.status(400).send({ errors: ["User already exists"] });
   }
 };
+//PreSignIn
 IdentityProvider.prototype.PreSignIn = async (req, res, next) => {
   this.clientId = req.body.clientId;
   this.codeChallenge = req.body.codeChallenge;
   this.SignInId = require("crypto").randomBytes(32).toString("hex");
   return res.status(200).send({ SignInId: this.SignInId });
 };
+//SignInAdded
 IdentityProvider.prototype.signIn = async (req, res, next) => {
   try {
     if (this.SignInId !== req.body.SignInId) {
@@ -56,6 +57,7 @@ IdentityProvider.prototype.signIn = async (req, res, next) => {
     return next(err);
   }
 };
+//PostSignIn
 IdentityProvider.prototype.PostSignIn = async (req, res, next) => {
   if (req.body.authorizationCode !== this.authorizationCode) {
     return res.status(401).send({ errors: ["Unauthorized"] });
