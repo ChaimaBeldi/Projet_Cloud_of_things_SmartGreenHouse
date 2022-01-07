@@ -1,0 +1,255 @@
+<ion-header [translucent]="true" style="background-color: rgb(196, 230, 164)">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <img src="assets/icon/icon1.png" style="width: 150px" alt="" />
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button
+        size="larger"
+        style="color: yellowgreen"
+        auto-hide="false"
+      ></ion-menu-button>
+      <ion-button (click)="logout()" size="larger"
+        ><strong style="color: #496409; font-family: cursive"
+          >logout</strong
+        ></ion-button
+      >
+    </ion-buttons>
+
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <div
+    style="
+      text-align: center;
+      padding-top: 30px;
+      color: rgb(18, 110, 49);
+      font-size: 35px;
+    "
+  >
+    <strong
+      style="
+        padding-top: 50px;
+
+        justify-content: center;
+        font-family: cursive;
+        font-size: larger;
+        text-align: center;
+      "
+    >
+      My sensors</strong
+    >
+    <br />
+    <img
+      src="assets/icon/smartsensor.png"
+      style="width: 170px; height: 160px; justify-content: center"
+      alt=""
+    />
+  </div>
+
+  <ion-header>
+    <ion-toolbar-toolbar>
+      <ion-title>
+        <strong
+          style="
+            color: #a2cd37;
+            font-size: larger;
+
+            font-family: cursive;
+          "
+          >Sensors Results</strong
+        >
+      </ion-title>
+    </ion-toolbar-toolbar>
+  </ion-header>
+  <!-- Temperature Sensor -->
+
+  <ion-list-header color="light">
+    <strong
+      style="
+        font-family: cursive;
+        padding-left: 20px;
+        color: #5e800b;
+        font-size: larger;
+      "
+      >Temperature Sensor</strong
+    >
+  </ion-list-header>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title
+        ><strong style="color: #78a10f; font-size: medium"></strong
+      ></ion-card-title>
+    </ion-card-header>
+    <ion-card-content style="display: flex; justify-content: space-around">
+      <ion-card class="welcome-card">
+        <ion-card-header>
+          <ion-card-title
+            ><strong style="color: #78a10f; font-size: large"
+              >Image of sensor</strong
+            >
+          </ion-card-title>
+        </ion-card-header>
+        <img
+          src="assets/icon/temperature.jpg"
+          style="
+            width: 170px;
+            height: 170px;
+            justify-content: center;
+            padding-top: 20px;
+            justify-content: center;
+          "
+          alt=""
+        />
+      </ion-card>
+      <!-- ===== -->
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title
+            ><strong style="color: #78a10f; font-size: large">Chart</strong>
+          </ion-card-title>
+        </ion-card-header>
+        <img
+          src="assets/icon/resultattemperature1.jpg"
+          style="
+            width: 170px;
+            height: 170px;
+            justify-content: center;
+            padding-top: 20px;
+          "
+          alt=""
+        />
+      </ion-card>
+    </ion-card-content>
+  </ion-card>
+  <!-- Light Sensor -->
+  <ion-list-header color="light">
+    <strong
+      style="
+        font-family: cursive;
+        padding-left: 20px;
+        color: #5e800b;
+        font-size: larger;
+      "
+      >Light Sensor</strong
+    >
+  </ion-list-header>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title
+        ><strong style="color: #78a10f; font-size: medium"></strong
+      ></ion-card-title>
+    </ion-card-header>
+    <ion-card-content style="display: flex; justify-content: space-around">
+      <ion-card class="welcome-card">
+        <ion-card-header>
+          <ion-card-title
+            ><strong style="color: #78a10f; font-size: large"
+              >Image of sensor</strong
+            >
+          </ion-card-title>
+        </ion-card-header>
+        <img
+          src="assets/icon/light.png"
+          style="
+            width: 170px;
+            height: 170px;
+            justify-content: center;
+            padding-top: 20px;
+            justify-content: center;
+          "
+          alt=""
+        />
+      </ion-card>
+      <!-- ===== -->
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title
+            ><strong style="color: #78a10f; font-size: large">Chart</strong>
+          </ion-card-title>
+        </ion-card-header>
+        <img
+          src="assets/icon/resultatlumiere.png"
+          style="
+            width: 170px;
+            height: 170px;
+            justify-content: center;
+            padding-top: 20px;
+          "
+          alt=""
+        />
+      </ion-card>
+    </ion-card-content>
+  </ion-card>
+  <!-- Humidity Sensor -->
+  <ion-list-header color="light">
+    <strong
+      style="
+        font-family: cursive;
+        padding-left: 20px;
+        color: #5e800b;
+        font-size: larger;
+      "
+      >Humidity Sensor</strong
+    >
+  </ion-list-header>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title
+        ><strong style="color: #78a10f; font-size: large"></strong>
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content style="display: flex; justify-content: space-around">
+      <ion-card class="welcome-card">
+        <ion-card-header>
+          <ion-card-title
+            ><strong style="color: #78a10f; font-size: large"
+              >Image of sensor</strong
+            >
+          </ion-card-title>
+        </ion-card-header>
+        <img
+          src="assets/icon/humidity.jpg"
+          style="
+            width: 170px;
+            height: 170px;
+            justify-content: center;
+            padding-top: 20px;
+            justify-content: center;
+          "
+          alt=""
+        />
+      </ion-card>
+      <!-- ===== -->
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title
+            ><strong style="color: #78a10f; font-size: large">Chart</strong>
+          </ion-card-title>
+        </ion-card-header>
+        <img
+          src="assets/icon/resultathumidite.png"
+          style="
+            width: 170px;
+            height: 170px;
+            justify-content: center;
+            padding-top: 20px;
+          "
+          alt=""
+        />
+      </ion-card>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<!-- Fade Footer -->
+<ion-footer collapse="fade" style="background-color: rgb(196, 230, 164)">
+  <ion-toolbar style="background-color: rgb(196, 230, 164)">
+    <ion-title>
+      <p style="font-size: 12px; color: #263307; text-align: center">
+        ©Copyright Chaima Beldi & Hassine Chahed
+      </p>
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>

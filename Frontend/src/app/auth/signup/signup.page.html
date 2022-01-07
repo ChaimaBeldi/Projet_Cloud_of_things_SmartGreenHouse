@@ -1,58 +1,177 @@
-<ion-header>
+<ion-header [translucent]="true" style="background-color: rgb(196, 230, 164)">
   <ion-toolbar>
-    <div style="display: flex">
+    <ion-buttons slot="start">
       <img src="assets/icon/icon1.png" style="width: 150px" alt="" />
-      <ion-title
-        style="text-align: center; color: rgb(18, 110, 49); font-size: 35px"
-      >
-        Sign Up</ion-title
-      >
-    </div>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button
+        size="larger"
+        style="color: yellowgreen"
+        auto-hide="false"
+      ></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding="true">
-  <div class="center">
-    <h1 style="margin: 10px; color: rgb(18, 110, 49)">Create Account</h1>
+  <div
+    style="
+      text-align: center;
+
+      color: #a2cd37;
+      font-size: 35px;
+    "
+  >
+    <strong
+      style="
+        justify-content: center;
+        font-family: cursive;
+        font-size: larger;
+        text-align: center;
+      "
+    >
+      Sign Up</strong
+    >
+    <br />
+    <img
+      src="assets/icon/login.jpg"
+      style="
+        width: 160px;
+        height: 160px;
+        justify-content: center;
+        padding-top: 20px;
+      "
+      alt=""
+    />
   </div>
   <form>
     <ion-list>
       <ion-item>
-        <ion-label position="stacked">Email</ion-label>
-        <ion-input autocomplete="off" name="email" type="email"></ion-input>
+        <ion-label
+          position="stacked"
+          style="
+            padding-bottom: 30px;
+            text-decoration: none;
+            color: rgb(42, 94, 18);
+            font-family: cursive;
+            font-size: large;
+          "
+          ><strong>Username</strong></ion-label
+        >
+        <ion-input
+          style="background-color: transparent"
+          autocomplete="off"
+          name="username"
+          type="text"
+          [(ngModel)]="postData.username"
+        ></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label position="stacked">Username</ion-label>
-        <ion-input autocomplete="off" name="username" type="text"></ion-input>
+        <ion-label
+          position="stacked"
+          style="
+            padding-bottom: 30px;
+            text-decoration: none;
+            color: rgb(42, 94, 18);
+            font-family: cursive;
+            font-size: large;
+          "
+          ><strong>Surname</strong></ion-label
+        >
+        <ion-input
+          style="background-color: transparent"
+          autocomplete="off"
+          name="surname"
+          type="text"
+          [(ngModel)]="postData.surname"
+        ></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label position="stacked">Surname</ion-label>
-        <ion-input autocomplete="off" name="surname" type="text"></ion-input>
+        <ion-label
+          position="stacked"
+          style="
+            padding-bottom: 30px;
+            text-decoration: none;
+            color: rgb(42, 94, 18);
+            font-family: cursive;
+            font-size: large;
+          "
+          ><strong>Forename</strong></ion-label
+        >
+        <ion-input
+          style="background-color: transparent"
+          autocomplete="off"
+          name="forename"
+          type="text"
+          [(ngModel)]="postData.forename"
+        ></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label position="stacked">Forename</ion-label>
-        <ion-input autocomplete="off" name="forename" type="text"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label position="stacked">Location</ion-label>
-        <ion-input autocomplete="off" name="location" type="text"></ion-input>
+        <ion-label
+          position="stacked"
+          style="
+            padding-bottom: 30px;
+            text-decoration: none;
+            color: rgb(42, 94, 18);
+            font-family: cursive;
+            font-size: large;
+          "
+          ><strong>Location</strong></ion-label
+        >
+        <ion-input
+          style="background-color: transparent"
+          autocomplete="off"
+          name="location"
+          type="text"
+          [(ngModel)]="postData.location"
+        ></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label position="stacked">Password</ion-label>
+        <ion-label
+          position="stacked"
+          style="
+            padding-bottom: 30px;
+            text-decoration: none;
+            color: rgb(42, 94, 18);
+            font-family: cursive;
+            font-size: large;
+          "
+          ><strong>Password</strong></ion-label
+        >
         <ion-input
+          style="background-color: transparent"
           autocomplete="off"
           name="password"
           type="password"
+          [(ngModel)]="postData.password"
         ></ion-input>
       </ion-item>
 
       <ion-item lines="none">
-        Already have an account? <a routerLink="/login">Sign in.</a>
+        <p style="font-family: monospace">Already you have an account ?</p>
+        <a
+          style="
+            text-decoration: dashed;
+
+            color: rgb(42, 94, 18);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+              'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          "
+          routerLink="/login"
+          >Sign in.</a
+        >
       </ion-item>
     </ion-list>
-    <ion-button expand="block" share="round" color="success"
-      >Registration</ion-button
+
+    <ion-button
+      expand="block"
+      shape="round"
+      color="success"
+      (click)="signAction()"
+      >Register</ion-button
     >
   </form>
 </ion-content>

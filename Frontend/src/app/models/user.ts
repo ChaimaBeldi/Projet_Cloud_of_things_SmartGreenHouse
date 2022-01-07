@@ -6,6 +6,8 @@ export class User {
   public username?: string;
   public role?: string;
   public location?: string;
+  public age?: number;
+  public website?: string;
   public created_at?: string;
-  public photoURI?: string;
+  // public photoURI?: string;
 }
