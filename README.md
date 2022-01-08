@@ -24,7 +24,6 @@ Notre architecture prend le modèle suivant décrit ci-dessous :
 ![This is an image ](/Frontend/src/assets/icon/architecture.PNG)
 
 ## Technologies
-We used different frameworks and plugins as our tech stack, they are:
 
 - Angular : v13.0.0
 - Ionic: v6
